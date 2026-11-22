@@ -118,9 +118,6 @@ object ReminderScheduler {
         )
     }
 
-    private fun kotlinx.coroutines.CoroutineScope.launchSafe(block: suspend () -> Unit) {
-        launch { runCatching { block() } }
-    }
 }
 
 object AgentNotifications {
